@@ -1,0 +1,61 @@
+
+!!!BUG!!!
+
+swaip de CANCELAR na HORIZONTAL NÃO está funcionado
+
+!!!!!!!!!!!!!!!!!!!!!
+	IEnumerator ShootEnergyPulseA() meio ERRADO. REver
+
+	raio se mexe estranha dependendo do trilho
+	não destroi e tal
+
+	Enxugar o código, mas ele tá tipo... ok
+
+	Apenas 1 lado está atacando durante DUEL. Repensar a execução de ambos.
+	criar shootingDuel que vai realizar a parte de duelo de A e B juntos.
+
+	NÃO DUELA. Não retorna sobras quando inicia duelo
+!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!
+
+----
+gasto de energia por eletrizar trilho (trilho)
+charge <<FEITO>>
+duel  <<FEITO>>
+----
+retornar energia
+cancel charge <<FEITO>>
+cancel duel <<FEITO>>
+----
+
+Não usar evento mas o proprio trilho spawnar os tiros;
+a instancia do tiro possui os atributos passados pelo frame como speed e força;
+
+
+o observador instancia uma energy que percorre o trilho até:
+1 - o frame adversário
+ou 2- o meio do duelo
+
+ao encostar no fim ele é distruído e causa +/- '1' ao target
+
+disparo de energia do charge  <<Não Feito>>(??)
+disparo de energia do duel   <<Não Feito>>(??)
+-----
+cancelar disparo
+-----
+
+-----
+Fazer a A.I. das cores
+-----
+Condição de vitória/derrota
+-----
+Menus e interfaces no geral
+-----
+
+-----
+
+-----
+Editor/gerador de Levels
+-----
+Refinamentos
